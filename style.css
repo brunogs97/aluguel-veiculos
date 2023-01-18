@@ -1,0 +1,141 @@
+:root {
+    --background: #e7e7d7;
+    --main-font: 'Roboto', sans-serif;
+    --color-primary: #747c66;
+    --color-title: #140f07;
+    --border: #e5e5e5;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-primary);
+}
+/*BARRA DE NAVEGAÇÃO*/
+.lista {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista__navegacao {
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 60px;
+    height: 60px;
+    padding: .5em 1em;
+    margin: .5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link {
+    font-size: 12px;
+    display: block;
+    text-decoration: none;
+    color: var(--color-primary);
+    margin-top: .5em;
+}
+
+/*SEÇÃO DE VEÍCULOS*/
+#veiculos {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 90vw;
+    margin: 2em auto 0 auto;
+    padding: 1em .5em;
+    text-align: center;
+}
+
+.titulos__secao-veiculos {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--color-title);
+}
+
+.titulo__secao-economico {
+    margin: 1em 0;
+}
+
+/*CARD CARRO*/
+.carro {
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+    margin: 1em auto;
+    padding: .5em;
+    width: 70vw;
+}
+
+.nome-carro {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-primary);
+    margin-bottom: .5em;
+}
+
+.img-carro {
+    width: 200px;
+}
+
+.botao__realizar-reserva {
+    display: block;
+    text-decoration: none;
+    color: var(--color-primary);
+    margin: .5em 0 0 0;
+}
+
+/*INFORMAÇÕES SOBRE O ALUGUEL*/
+.informacao-aluguel {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background-color: #ffffff;
+    width: 95vw;
+    margin: 1em auto;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.titulo__secao-informacoes {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 1em 0 .5em .8em;
+}
+
+.titulo-informacao-do-grupo {
+    font-size: 18px;
+    font-weight: 400;
+    margin: .5em;
+}
+
+.oferta-com-adicionais {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 1em 0;
+    padding: .5em;
+}
+
+.valor__beneficios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.valor-aluguel {
+    font-size: 18px;
+}
+
+.beneficios {
+    font-size: 12px;
+}
+
+.valor-sem-adicionais {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin: 1em 0;
+    padding: .5em;
+}
