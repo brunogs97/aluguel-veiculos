@@ -13,13 +13,17 @@
     <title>Grupo Econômico</title>
 </head>
 <body>
+    <a href="./index.html" class="pagina-inicial">
+        <i class="fa-solid fa-arrow-left"> H O M E</i>
+    </a>
+
     <section class="secao__informacoes">
         <h2 class="titulo__secao-informacoes">Tarifas e Adicionais</h2>
 
         <div class="informacao-aluguel">
             <span class="titulo-informacao-do-grupo">Grupo Econômico</span>
             <div class="oferta-com-adicionais">
-                <input type="radio" class="input-radio" id="inputRadio">
+                <input type="radio" class="input-radio" name="inputRadio" id="inputRadio">
                 <span class="descricao__oferta">Oferta Standard Mínimo 3 diáras</span>
                 <div class="valor__beneficios">
                     <span class="valor-aluguel">R$ 102,59</span>
@@ -30,7 +34,7 @@
                 </div>
             </div>
             <div class="valor-sem-adicionais">
-                <input type="radio" class="input-radio" id="inputRadio">
+                <input type="radio" class="input-radio" checked name="inputRadio" id="inputRadio">
                 <span class="descricao__oferta">Oferta Promo Mínimo 3 diáras</span>
                 <div class="valor__beneficios">
                     <span class="valor-aluguel">R$ 88,30</span>
@@ -44,6 +48,10 @@
             </div>
         </div>
     </section>
+
+    <pre id="formas-de-pagamentos">
+
+    </pre>
 
     <script src="main.js"></script>
 </body>

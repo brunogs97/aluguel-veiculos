@@ -89,6 +89,17 @@ body {
 }
 
 /*INFORMAÇÕES SOBRE O ALUGUEL*/
+.fa-arrow-left {
+    background-color: #ffffff;
+    padding: .5em;
+    border-radius: 8px;
+    width: 90px;
+    text-align: center;
+    margin: .5em 0 0 .5em;
+    text-decoration: none;
+    font-size: 13px;
+}
+
 .informacao-aluguel {
     border: 1px solid var(--border);
     border-radius: 12px;
@@ -133,9 +144,67 @@ body {
     font-size: 12px;
 }
 
+.fa-check {
+    margin: .5em 0.5em .5em 0;
+}
+
 .valor-sem-adicionais {
     border: 1px solid var(--border);
     border-radius: 8px;
     margin: 1em 0;
     padding: .5em;
+}
+
+/*MOSTRAR FORMAS DE PAGAMENTOS NA PÁGINA "GRUPO-ECONÔMICO"*/
+#formas-de-pagamentos {
+    width: 90vw;
+    margin: 1em auto;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+/*SEÇÃO ATENDIMENTOS*/
+#atendimento {
+    width: 95vw;
+    margin: 1em auto;
+    background-color: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.titulo-formulario {
+    font-size: 20px;
+    font-weight: 700;
+    margin: .5em auto;
+}
+
+.campo__formulario {
+    margin: .6em auto;
+    width: 79vw;
+    text-align: start;
+    padding: 1em;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--border);
+    font-size: 14px;
+    font-family: var(--main-font);
+}
+
+.mensage::placeholder {
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+
+.botao-enviar {
+    background-color: var(--background);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: .5em;
+    width: 100px;
+    border: 1px solid var(--border);
+    margin-left: 6em;
+    cursor: pointer;
 }

@@ -22,7 +22,7 @@
 
             <li class="lista__navegacao">
                 <i class="fa-solid fa-phone"></i>
-                <a href="#" class="link">Atendimentos</a>
+                <a href="#atendimento" class="link">Atendimentos</a>
             </li>
             
 
@@ -34,6 +34,7 @@
         </ul>
     </nav>
 
+    <!--VEÍCULOS PARA ALUGUEL-->
     <section id="veiculos">
         <h2 class="titulos__secao-veiculos">Veículos para Alugar</h2>
 
@@ -64,6 +65,23 @@
         <div class="executivo">
             
         </div>
+    </section>
+
+    <!--ATENDIMENTO AO CLIENTE-->
+    <section id="atendimento">
+        <form class="formulario-de-atendimento">
+            <fieldset>
+                <legend class="titulo-formulario">Entre em contato com nós: </legend>
+                <label for="inName">
+                    <input type="text" required id="inName" class="campo__formulario name" placeholder="Digite seu nome">
+                </label><br>
+                <label for="inEmail">
+                    <input type="email" required id="inEmail" class="campo__formulario email" placeholder="Digite seu email">
+                </label><br>
+                <textarea name="mensage" class="campo__formulario mensage" id="inMensage" placeholder="Menssagem" cols="30" rows="10"></textarea><br>
+                <input type="submit" class="botao-enviar" value="Submit">
+            </fieldset>
+        </form>
     </section>
 
     <script src="main.js"></script>
