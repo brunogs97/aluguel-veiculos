@@ -156,6 +156,18 @@ body {
     padding: .5em;
 }
 
+.botao-reserva {
+    background-color: var(--background);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: .5em;
+    width: 200px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    margin-left: 4em;
+}
+
 /*MOSTRAR FORMAS DE PAGAMENTOS NA PÁGINA "GRUPO-ECONÔMICO"*/
 #formas-de-pagamentos {
     width: 90vw;
