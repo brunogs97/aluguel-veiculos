@@ -12,14 +12,17 @@ PagamentosComAdicionais.addEventListener('click', (e) => {
         PagamentosComAdicionais.style.background = '#eef1f3';
         pagamentosSemAdicionais.style.background = 'none';
     }
+    // CONFIRMA O ITEM SELECIONADO
+    const confirmarItem = confirm('Deseja finalizar a reserva? ');
+    if(confirmarItem) {
+        const valorAVista = 102.59 - (102.59 * 0.05);
 
-    const valorAVista = 102.59 - (102.59 * 0.05);
-
-    let resposta = `O valor de R$ 102,59 parcelado em 12x fica: ` + '\n';
-    for(let i = 1; i <= 12; i++) {
-        resposta = `${resposta} ${i} x 102,59 = R$ ${(102.59 / i).toFixed(2)}\n`
+        let resposta = `O valor de R$ 102,59 parcelado em 12x fica: ` + '\n';
+        for(let i = 1; i <= 12; i++) {
+            resposta = `${resposta} ${i} x 102,59 = R$ ${(102.59 / i).toFixed(2)}\n`
+        }
+        formasPagamentos.innerHTML = `O pagamento à vista fica R$ ${valorAVista.toFixed(2)}` + '\n' + `${resposta}`;
     }
-    formasPagamentos.innerHTML = `O pagamento à vista fica R$ ${valorAVista.toFixed(2)}` + '\n' + `${resposta}`;
 })
     
 pagamentosSemAdicionais.addEventListener('click', (e) => {

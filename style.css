@@ -41,8 +41,8 @@ body {
 }
 
 /*SEÇÃO DE VEÍCULOS*/
-#veiculos {
-    border: 1px solid black;
+#veiculos, #sobre {
+    border: 1px solid var(--border);
     border-radius: 10px;
     background-color: #ffffff;
     width: 90vw;
@@ -51,7 +51,7 @@ body {
     text-align: center;
 }
 
-.titulos__secao-veiculos {
+.titulos__secao-veiculos, .titulo-secao-sobre{
     font-size: 1.5em;
     font-weight: 700;
     color: var(--color-title);
@@ -98,6 +98,7 @@ body {
     margin: .5em 0 0 .5em;
     text-decoration: none;
     font-size: 13px;
+    color: var(--color-primary);
 }
 
 .informacao-aluguel {
@@ -207,4 +208,21 @@ body {
     border: 1px solid var(--border);
     margin-left: 6em;
     cursor: pointer;
+}
+
+/*SEÇÃO SOBRE*/
+.descricao-sobre-empresa {
+    margin: 1em 0;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+footer {
+    width: 100vw;
+    height: 40px;
+    border-top: 1px solid;
+    text-align: center;
+    padding-top: .8em;
+    box-sizing: border-box;
+    margin-top: 1em;
 }
