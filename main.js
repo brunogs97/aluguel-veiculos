@@ -3,7 +3,7 @@ const selecionarFormasPagaments = document.querySelector('input-radio')
 const pagamentosSemAdicionais = document.querySelector('.valor-sem-adicionais');
 const check = document.querySelector('[type=radio]');
 const formasPagamentos = document.querySelector('#formas-de-pagamentos');
-const botaoFinalizarReserva = document.querySelector('#botao-reserva')
+const botaoFinalizarReserva = document.querySelector('#botao-reserva');
 
 PagamentosComAdicionais.addEventListener('click', (e) => {
     const verificarMarcacao = check.checked;
@@ -46,15 +46,19 @@ botaoFinalizarReserva.addEventListener('click', (e) => {
 
     if(confirmarItem) {
         let metodoPagamento = Number(prompt('Selecione qual opção de pagamento (1-À Vista/2-Parcelado)'))
+        
+        while(metodoPagamento !== 1 && metodoPagamento !== 2) {
+            alert('Forma de pagamento inválida');
+            metodoPagamento = Number(prompt('Selecione qual opção de pagamento (1-À Vista/2-Parcelado)'))
+        }
+        
         switch(metodoPagamento) {
             case 1:
                 alert('Forma de pagamento realizada com sucesso!');
                 break;
             case 2:
                 alert('Forma de pagamento realizada com sucesso!');
-                break
-            default:
-                alert('Forma de pagamento inválida')
+                break;       
         }      
     }
 })

@@ -57,7 +57,7 @@ body {
     color: var(--color-title);
 }
 
-.titulo__secao-economico {
+.titulo {
     margin: 1em 0;
 }
 
@@ -86,7 +86,14 @@ body {
     text-decoration: none;
     color: var(--color-primary);
     margin: .5em 0 0 0;
+} 
+
+.secao-executivo {
+    border-top: 1px solid var(--border);
+    margin: 1.5em 0;
+    padding-top: 1em;
 }
+
 
 /*INFORMAÇÕES SOBRE O ALUGUEL*/
 .fa-arrow-left {
